@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Farm | Mensch Filam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif-italic { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 900; }
+        .bg-mensch-yellow { background-color: #FACC15; }
+        
+        /* Large Image Styling */
+        .farm-main-image {
+            width: 100%;
+            height: 80vh; /* Fills 80% of the screen height */
+            object-fit: cover;
+            border-radius: 0 0 80px 80px; /* Elegant rounded bottom */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-slate-900">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-mensch-yellow border-b border-black/10 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-3xl font-[1000] tracking-tighter uppercase text-black">
+                MENSCH FILAM<span class="text-white ml-0.5">.</span>
+            </a>
+            <a href="index.html" class="bg-black text-white px-8 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition flex items-center">
+                <span class="mr-2">←</span> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- LARGE FARM IMAGE -->
+    <section class="pt-20">
+        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL PHOTO -->
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000" 
+             alt="The Mensch Filam Farm" 
+             class="farm-main-image">
+    </section>
+
+    <!-- FARM INFORMATION BLOCK -->
+    <main class="max-w-4xl mx-auto px-8 py-24">
+        <div class="text-center mb-16">
+            <span class="text-[10px] font-black uppercase tracking-[0.5em] text-yellow-600 mb-4 block">Orchard Specifications</span>
+            <h1 class="text-6xl md:text-8xl serif-italic text-black leading-none uppercase">Our Estate.</h1>
+        </div>
+
+        <!-- The Information Block -->
+        <div class="bg-white p-12 md:p-20 rounded-[60px] shadow-sm border border-black/5">
+            <h2 class="text-3xl font-bold text-black mb-8 border-b border-mensch-yellow pb-4 inline-block">The Land & Climate</h2>
+            
+            <!-- This is where you put all your farm information -->
+            <div class="prose prose-lg text-slate-600 space-y-8 leading-relaxed">
+                <p class="text-xl">
+                    Located in the heart of the Filipino agricultural belt, the Mensch Filam estate spans over 2,500 acres of volcanic-rich soil. Our unique microclimate, characterized by consistent rainfall and tempered tropical heat, allows us to grow varieties that are impossible to cultivate elsewhere.
+                </p>
+                
+                <h3 class="text-black font-black uppercase text-sm tracking-widest pt-4">Sustainable Practices</h3>
+                <p>
+                    We operate as a closed-loop ecosystem. Every byproduct of our harvest is recycled back into the soil as organic compost. By avoiding chemical pesticides and focusing on soil health, we ensure that our trees produce fruit with deep, complex flavor profiles that reflect the integrity of the earth.
+                </p>
+
+                <h3 class="text-black font-black uppercase text-sm tracking-widest pt-4">Human-Hand Methodology</h3>
+                <p>
+                    Unlike industrial plantations that rely on mechanical harvesters, every square inch of our farm is managed by a team of heritage farmers. This human-centric approach allows us to inspect every tree daily, harvesting only at the peak of ripeness.
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 pt-10">
+                    <div class="bg-[#FAF9F6] p-8 rounded-3xl">
+                        <p class="text-4xl font-black text-black">100%</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-400">Pesticide Free</p>
+                    </div>
+                    <div class="bg-[#FAF9F6] p-8 rounded-3xl">
+                        <p class="text-4xl font-black text-black">2.5k</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-400">Acres of Orchard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-24 px-8 text-center">
+        <div class="text-6xl font-[1000] tracking-tighter uppercase mb-6">MENSCH FILAM</div>
+        <p class="text-white/40 uppercase text-[9px] font-bold tracking-[0.6em]">Agriculture Studio • Philippines</p>
+    </footer>
+
+</body>
+</html>
